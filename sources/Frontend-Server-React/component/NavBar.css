@@ -1,0 +1,53 @@
+.NavBar{
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.NavBar button {
+    padding: 50px 3px 3px 3px;
+    margin-left: 46px;
+    font-size: 18px;
+    color: rgb(214, 214, 214);
+    background-color: inherit;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+  
+.NavBar button:hover {
+    color: #f1f1f1;
+}
+
+#title1{
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+  
+#title2{
+    width: 180px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+button:disabled{
+    color: #222;
+    cursor: auto;
+}
+
+button:disabled:hover{
+    color:#222;
+}
+
+.y-spacer{
+    height: 150px;
+}

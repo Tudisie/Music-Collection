@@ -1,0 +1,32 @@
+-- `auth-db`.roles definition
+
+CREATE TABLE `roles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `roles_name_UN` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+
+
+-- `auth-db`.`user-roles` definition
+
+CREATE TABLE `user-roles` (
+  `user_id` int(11) NOT NULL,
+  `role_id` int(11) NOT NULL,
+  KEY `user_roles_FK` (`user_id`),
+  KEY `user_roles_FK_1` (`role_id`),
+  CONSTRAINT `user_roles_FK` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `user_roles_FK_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- `auth-db`.users definition
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(128) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username_UN` (`username`),
+  CONSTRAINT `users_CHECK` CHECK (octet_length(`username`) > 2)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT 

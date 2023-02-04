@@ -1,0 +1,27 @@
+.Account{
+    min-height: 200px;
+}
+
+.distance-account{
+    height: 80px;
+}
+
+.table-account{
+    display: table;
+}
+
+.row-account{
+    display: table-row;
+}
+
+.cell-account{
+    display: table-cell;
+    padding-left: 6px;
+    padding-top: 50px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.roles-account{
+    padding-bottom: 10px;
+}

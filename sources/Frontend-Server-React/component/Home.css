@@ -1,0 +1,23 @@
+.Home h1{
+    padding-bottom: 20px;
+    color: #e6e6e6;
+}
+
+.inline-block{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.view-all-btn{
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.view-all-btn:hover{
+    color:aliceblue;
+}

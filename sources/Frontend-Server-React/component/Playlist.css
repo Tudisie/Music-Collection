@@ -1,0 +1,43 @@
+.Playlist{
+    position: relative;
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    border-radius: 3px;
+    width: 210px;
+    margin: 10px;
+}
+
+.playlist-image{
+    width: 100px;
+    padding-left: 50px;
+}
+
+.Playlist p span{
+    color: rgb(159, 159, 159);
+    padding-left: 10px;
+}
+
+.Playlist h3{
+    padding: px;
+    text-align: center;
+}
+
+.playlist-button{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 13px;
+    width: 180px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid white;
+    border-radius: 7px;
+    box-shadow: 0 9px #999;
+    transition: 0.2s;
+}
+
+.playlist-button:hover{
+    background-color: #333;
+}

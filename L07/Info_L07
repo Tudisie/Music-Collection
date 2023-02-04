@@ -1,0 +1,38 @@
+Componente:
+Autentificare
+Autorizare - daca proiectul are mai multe functionalitati, verificam daca clientul are dreptul la acea functionalitate
+Encrypt - daca sunt date sensibile
+Integrity Check - verificare daca mesjaul transmis a ajuns la destintatie corect sau a fost alterat
+
+Encrypt si Integrity Check sunt asigurate de protocolul TLS/SSL
+
+Autorizarea este mereu precedata de autentificare
+
+Autentificare:
+nu trebuie trimise datele de conectare la fiecare cerere (http://user:pass@host/resource - asa NU)
+in acest caz avem nevoie de token/sesiune: verific o singura data pe sesiune datele. dupa, livrez un jeton virtual care va identifica sesiunea de lucru a utilizatorului. token-ul va fi validat dupa, la fiecare cerere, inainte de procesarea in sine a cererii.
+token-ul poate fi incapsulat in orice forma: in query (URL:...&token|SessionID), metadata-header (Authorization: Cookie:), body etc
+
+Headerul Cookie se reseteaza pe alt domeniu (gmail - google drive)
+Headerul Authorization nu
+
+De obicei se foloseste o combiantie intre cele 2
+
+Avantaje:
+in metadata: se face validare in layer-ul de transport (AMT) (rapid de procesat)
+in metadata: decuplare de domeniu
+
+Dezavantaje:
+in body: nu toate cererile au body
+in body: trebuie validat in application (AMT model - application model? transport) - trebuie sa trecem prin toate layerele pentru un simplu deny (Transport este primul layer)
+in query: este expus clientului
+
+Token-urile pot fi reprezentate diferit.
+In SOAP se respecta SAML (format XML)
+In REST: forma echivalenta a SAML, numita JWT (format JSON)
+	In JWT se folosesc JWS (JWT semnal digital) sau JWE (JWT criptat si semnat)
+	JWS: header + payload + signature (vezi laborator)
+	
+Primul test care se face: Integrity check (daca semnatura e valida)
+Al doilea test: verificare ciclu de viata (data de expirare)
+Daca pica vreun test - se adauga tokenul invalid intr-un blacklist

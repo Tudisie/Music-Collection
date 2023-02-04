@@ -1,0 +1,19 @@
+.Register{
+    width: 400px;
+    padding-top: 80px;
+    margin: auto;
+    color: white;
+}
+
+.Register h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#age{
+    width: 280px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}

@@ -1,0 +1,36 @@
+.playlist-add-release-details{
+    font-size: 16px;
+    background-color: #222;
+    display: inline-block;
+    padding: 40px;
+    min-width: 500px;
+    margin-top: 31px;
+    transition: 0.3s;
+}
+
+.playlist-add-release-details:hover{
+    background-color: #555;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.add-release-to-playlist{
+    background-color: inherit;
+    border: 0;
+    text-align: left;
+    color: white;
+}
+
+.back-button{
+    margin-left: 926px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.back-button:hover{
+    background-color: #555;
+}

@@ -1,0 +1,44 @@
+.add-user{
+    margin-top: -40px;
+    margin-right: 120px;
+    width: 200px;
+    background-color: #222;
+    float: right;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.add-user:hover{
+    cursor: pointer;
+    background-color: #444;
+}
+
+.new-artist-input{
+    float: right;
+    margin-right: 50px;
+}
+
+.block-artist-info-left{
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    width: 200px;
+    margin-top: -20px;
+}
+
+.artist-active-select{
+    background-color: #222;
+    width: 165px;
+    float: right;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.artist-add-error{
+    margin-left: 30px;
+    margin-top: 30px;
+}

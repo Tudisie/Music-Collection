@@ -1,0 +1,83 @@
+.Release{
+    position: relative;
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    border-radius: 3px;
+    width: 210px;
+    margin: 10px;
+}
+
+.song-image{
+    width: 170px;
+    margin: 20px;
+}
+
+.picture{
+    background-color: #333;
+}
+
+.Release h3{
+    padding: 0px;
+    text-align: center;
+}
+
+.release-type-text{
+    text-align: center;
+}
+
+.Release p span{
+    color: rgb(159, 159, 159);
+}
+
+.release-button{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 13px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid white;
+    border-radius: 7px;
+    box-shadow: 0 9px #999;
+    position: absolute;
+    bottom: 10px;
+    transition: 0.2s;
+}
+
+
+.right-btn-delete{
+    left: 128px;
+}
+
+.release-button:hover{
+    background-color: #333;
+}
+
+.release-info-btn{
+    width: 30px;
+    height: 25px;
+    background-color: #222;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid #444;
+    float: right;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    z-index: 10;
+    transition: 0.2s;
+}
+
+.release-info-btn:hover{
+    background-color: #111;
+}
+
+.release-info-artists{
+    width: 170px;
+    height: 174px;
+    position: absolute;
+    background-color: rgba(36, 36, 36, 0.98);
+    padding: 20px;
+}

@@ -1,0 +1,30 @@
+Comenzi:
+
+Se creeaza un proiect Java nou. Se adauga 3 module diferite (client, servant, interfaces). Se da delete la proiectul mare din Solution explorer (ca sa ramana doar cele 3 module afisate)
+
+File - Project Structure - Artifacts - (+) Add JAR from modules ... - se adauga modulul (interfaces) si se lasa liber la Mainclass, deoarece nu avem metoda main
+Build - Build artifacts - interfaces.jar
+
+File - Project Strucutre - Modules - Se adauga JAR-ul creat mai devreme (interfaces) pentru celelalte module (client, servant)
+Build - Build artifacts - client.jar, interfaces.jar
+
+Comenzi folosite pentru a rula proiectul cu cele 3 module:
+----------------------------------------------------------
+
+===Lansam serviciul RMIRegistry===
+
+rmiregistry -J-Djava.class.path=/home/tudisie/Documents/POS/L01X/out/artifacts/rmi_hello_interfaces_jar/rmi_hello_interfaces.jar
+
+===Server===
+
+java -Djava.rmi.server.codebase=file:/home/tudisie/Documents/POS/L01X/out/artifacts/rmi_hello_servant_jar/rmi_hello_servant.jar -Djava.security.policy=/home/tudisie/Documents/POS/L01X/rmi_hello_servant/server.policy -jar /home/tudisie/Documents/POS/L01X/out/artifacts/rmi_hello_servant_jar/rmi_hello_servant.jar
+
+Se poate sterge partea de policy deoarece este comentata si in cod (are erori daca o folosim)
+
+java -Djava.rmi.server.codebase=file:/home/tudisie/Documents/POS/L01X/out/artifacts/rmi_hello_servant_jar/rmi_hello_servant.jar -jar /home/tudisie/Documents/POS/L01X/out/artifacts/rmi_hello_servant_jar/rmi_hello_servant.jar
+
+===Client===
+
+java -Djava.rmi.server.codebase=file:/home/tudisie/Documents/POS/L01X/out/artifacts/rmi_hello_client_jar/rmi_hello_client.jar -jar /home/tudisie/Documents/POS/L01X/out/artifacts/rmi_hello_client_jar/rmi_hello_client.jar
+
+

@@ -1,0 +1,82 @@
+.CreateSongPage{
+    width: 400px;
+    padding-top: 100px;
+    margin: auto;
+    color: white;
+}
+
+.CreateSongPage h1{
+    text-align: center;
+    padding: 10px;
+}
+
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.create-song-label{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+ 
+input[type=submit] {
+  background-color: rgb(111, 111, 111);
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  transition: 0.3s;
+}
+ 
+input[type=submit]:hover {
+  background-color: black;
+  border: 1px solid white;
+}
+
+
+.col-35 {
+  float: left;
+  width: 35%;
+  margin-top: 6px;
+}
+
+.col-65 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+
+.error-message{
+  text-align: center;
+}
+
+#genres{
+    width: 288px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#type{
+    width: 288px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#releaseyear{
+    width: 280px;
+    font-size: 20px;
+    margin-top: 5px;
+}

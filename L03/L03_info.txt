@@ -1,0 +1,31 @@
+
+vbox: Guest (pe host - laptop) 192.168.56.1
+	3 masini virtuale:
+		SQL: 192.168.56.10
+		Mongo: 192.168.56.20
+		Dev: 192.168.56.2
+
+sudo mysql
+
+show databases;
+use mysql;
+show tables;
+select user, host, password from user;
+	
+	root
+	mariadb.sys
+	remote-admin	192.168.56.2 (masina de dev)
+	remote-admin	192.168.56.1 (sa fie vazut de host)  				(passwdremoteadmin)
+	auth-admin	192.168.56.1 (masina de dev)					(passwdauthadmin)
+	auth-user		192.168.56.1 (masina de dev) - doar SELECT UPDATE DELETE INSERT	(passwdauthuser)
+
+Daca vreau sa lucrez de pe Ubuntu-ul meu, fara masina de Dev, am nevoie doar de remote-admin 192.168.56.1
+
+
+DROP 'user'@'host'
+create user 'remote-admin'@'192.168.56.1' identified by 'passwdremote';
+grant all on *.* to 'remote-admin'@'192.168.56.1' with grant option;
+flush privileges; (de cate ori acordam drepturi unui user nou/set de useri) 
+
+\q - pentru a iesi
+

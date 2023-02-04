@@ -1,0 +1,110 @@
+.User{
+    width: 1000px;
+    background-color: #111;
+    margin: 30px;
+    height: 300px;
+}
+
+.user-img-wrapper{
+    float: left;
+    height: 140px;
+    
+}
+
+.user-img{
+    width: 140px;
+    margin: 30px;
+    background-color: #222;
+    display: block;
+}
+
+.user-details{
+    background-color: #222;
+    display: inline-block;
+    padding: 40px;
+    min-width: 600px;
+    font-size: 16px;
+    margin-top: 31px;
+    height: 65px;
+}
+
+.block-info-left{
+    display: block;
+    margin-top: -8px;
+    font-size: 18px;
+}
+
+.block-info-right{
+    display: block;
+    float: right;
+}
+
+.first-p-block-info{
+    margin-top: -75px;
+}
+
+.block-info-right p{
+    margin-left: -200px;
+}
+
+.User span{
+    color: #888;
+}
+
+.remove-margin-top{
+    margin-top: -10px;
+}
+
+.add-role-user{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 400px;
+    display: inline-block;
+}
+
+#add-role{
+    width: 140px;
+    height: 8px;
+    margin-left: 40px;
+    font-size: 14px;
+    background-color: #222;
+    color: white;
+    display: inline-block;
+}
+
+#submit-add-role{
+    height: 37px;
+}
+
+#delete-role{
+    width: 140px;
+    height: 8px;
+    margin-left: 20px;
+    font-size: 14px;
+    background-color: #222;
+    color: white;
+}
+
+#submit-delete-role{
+    height: 37px;
+}
+
+.delete-user{
+    display: inline;
+    margin-top: 50px;
+    margin-right: 120px;
+    width: 200px;
+    background-color: #222;
+    float: right;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.delete-user:hover{
+    cursor: pointer;
+    background-color: #888;
+    color: black;
+}

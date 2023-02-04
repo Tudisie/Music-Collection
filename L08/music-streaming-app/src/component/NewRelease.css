@@ -1,0 +1,44 @@
+.NewRelease{
+    position: relative;
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    border-radius: 3px;
+    width: 220px;
+    margin: 10px;
+    height: 93%;
+    text-decoration: none;
+}
+
+.NewRelease div{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.NewRelease:hover div{
+    background-color: #111;
+}
+
+.song-image{
+    width: 170px;
+    margin: 20px;
+    padding-top: 0px;
+}
+
+.NewRelease h3{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.NewRelease:hover h3{
+    color: black;
+}
+
+.new-release-btn{
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+}

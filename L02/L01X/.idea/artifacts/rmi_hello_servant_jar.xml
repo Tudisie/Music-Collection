@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="rmi_hello_servant:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/rmi_hello_servant_jar</output-path>
+    <root id="archive" name="rmi_hello_servant.jar">
+      <element id="module-output" name="rmi_hello_servant" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/rmi_hello_interfaces_jar/rmi_hello_interfaces.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,44 @@
+.PlaylistPageRelease{
+    width: 1000px;
+    background-color: #111;
+    margin: 30px;
+    height: 160px;
+}
+
+.playlist-release-img-wrapper{
+    display: inline-block;
+    float: left;
+    height: 100px;
+    
+}
+
+.playlist-release-img{
+    width: 100px;
+    margin: 30px;
+    background-color: #222;
+    display: block;
+}
+
+.playlist-release-details{
+    background-color: #222;
+    display: inline-block;
+    padding: 40px;
+    min-width: 500px;
+    font-size: 16px;
+    margin-top: 31px;
+}
+
+.playlist-release-delete-btn{
+    background-color: #333;
+    color: white;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 30px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.playlist-release-delete-btn:hover{
+    background-color: #444;
+}

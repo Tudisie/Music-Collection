@@ -1,0 +1,23 @@
+Spring Initializr Setup:
+	Mave Project (Java)
+	Spring Boot 2.7.5
+	Packing: Jar
+	Java: 11
+	Dependencies:
+		Spring Web
+		Spring HATEOAS
+		Spring Data JPA
+		MariaDB Driver
+
+Link-uri cu tutoriale folosite:
+
+Faster implementation @Getter @Setter:	https://projectlombok.org/features/GetterSetter
+JPA vs Hibernate			https://www.javatpoint.com/jpa-vs-hibernate
+Spring JPA:			https://www.geeksforgeeks.org/spring-boot-spring-data-jpa/
+ResponseEntity<> + HATEOAS:		https://howtodoinjava.com/spring-boot2/rest/rest-with-spring-hateoas-example/
+DTO:				https://thorben-janssen.com/dto-projections/
+@GeneratedValue(Custom generator): 	https://www.baeldung.com/hibernate-identifiers
+Custom findBy(Object o):		https://bushansirgur.in/spring-data-jpa-finder-methods-by-field-name-with-examples/
+Pagination:			https://www.baeldung.com/spring-data-jpa-pagination-sorting
+@Query:				https://www.codejava.net/frameworks/spring-boot/spring-data-jpa-filter-search-examples
+OpenAPI:				https://www.baeldung.com/spring-rest-openapi-documentation

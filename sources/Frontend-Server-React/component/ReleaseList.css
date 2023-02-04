@@ -1,0 +1,8 @@
+.ReleaseList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap:1.5rem;
+    justify-content: left;
+    align-content: center;
+    margin-right: 30px;
+}

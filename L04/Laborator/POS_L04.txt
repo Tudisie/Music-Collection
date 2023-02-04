@@ -1,0 +1,31 @@
+Tipuri de servicii web:
+	- orientate pe actiune (SOAP/XML - comportament RPC/RMI clasic)
+	- orientate pe resurse (REST)
+	- orientate pe mesaje (Cozi de mesaje)
+
+In SOAP/XML avem WSDL - document care ma ajuta sa prezint capabilitatile serviciului.
+La nivel de protocol avem HTTP -> GET (obtinem descriptorul WSDL) 
+			    POST (orice apel de primitiva de calcul se face prin POST)
+
+in RMI aveam Stub
+in SOAP avem Envelope: Datele sunt impachetate intr-un plic care contine Header + Body (Data + ID-metoda)
+
+Serviciu SOAP - se poate implementa in 2 moduri:
+1) Descriem WSDL, generam clasele, implementam metodele si alegem manual punctele in care se expune WSDL si adresa de acces pt serivicii
+2) folosesc adnotarile din python. implementarea claselor, metodelor iar unele metode le adnotam ca fiind servicii Web.
+
+
+Tema
+
+Metode:
+	-register (push prin sql alchemy la username si parola -> intoarce id de user) + preluam rolul cel mai slab + maparile in tabela de join
+	-change password
+Clasa de serviciu:
+	-conectorul pt baza de date
+	-in main instantiem conectorul
+	-metodele
+	
+	
+De pe net:
+Normal web servers cant run python applications.
+So a special type of server was created to run python applications. This special type of server is called WSGI server.

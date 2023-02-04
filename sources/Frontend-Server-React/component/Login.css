@@ -1,0 +1,59 @@
+.Login {
+    width: 400px;
+    padding-top: 180px;
+    margin: auto;
+    color: white;
+}
+
+.Login h1{
+    text-align: center;
+    padding: 10px;
+}
+
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(111, 111, 111);
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  transition: 0.3s;
+}
+ 
+input[type=submit]:hover {
+  background-color: black;
+  border: 1px solid white;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+
+.error-message{
+  text-align: center;
+}

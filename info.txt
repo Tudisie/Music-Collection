@@ -1,0 +1,16 @@
+Pornire aplicatie:
+
+Trebuie sa avem setat java 19:
+sudo update-alternatives --config java
+
+Pornire masina virtuala MariaDB
+Pornire masina virtuala MongoDB
+java -jar L05X-0.0.1-SNAPSHOT.jar 	(java 11)	 - Server Backend (Releases/Artists)	localhost:8080
+java -jar L06X-0.0.1-SNAPSHOT.jar 	(java 19)	 - Server Backend (Playlists)		localhost:8081
+Rulare L07/ServerSOAP			 - IDM (SOAP)			localhost:8000
+L08/music-streaming-app: npm start		 - Server Frontend (React)		localhost:3000
+
+
+Observatii:
+
+Majoritatea operatiilor pentru manipularea datelor au fost implementate si pe componenta frontend, astfel ca pot fi testate din browserul web. Unele operatii de PUT/PATCH au fost implementate doar pe backend, iar testarea lor se poate face cu ajutorul cererilor din Postman. Unele cereri s-ar putea sa nu functioneze deoarece nu este adaugat header-ul Authorization pentru verificare, ca efect al implementarii tarzii a autentificarii si autorizarii.

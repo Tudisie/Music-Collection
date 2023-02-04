@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rmi_hello_client/rmi_hello_client.iml" filepath="$PROJECT_DIR$/rmi_hello_client/rmi_hello_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmi_hello_interfaces/rmi_hello_interfaces.iml" filepath="$PROJECT_DIR$/rmi_hello_interfaces/rmi_hello_interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmi_hello_servant/rmi_hello_servant.iml" filepath="$PROJECT_DIR$/rmi_hello_servant/rmi_hello_servant.iml" />
+    </modules>
+  </component>
+</project>

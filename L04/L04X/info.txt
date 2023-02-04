@@ -1,0 +1,8 @@
+run db_auth_service.py - Server
+	- foloseste sqlalchemy pentru a conecta server-ul la mariadb
+	- foloseste wsgi pentru a crea o interfata de comunicare prin SOAP
+	
+run test_soap_client.py - Client de test
+	- foloseste suds.Client pentru a se conecta si a comunica mai usor cu SOAP
+
+Atentie! Pentru mariadb cu sqlalchemy s-a instalat mariadb:Connector cu pip folosind python3.9. Versiunile mai vechi descarca un connector prea vechi si nu functioneaza sqlalchemy cu el.

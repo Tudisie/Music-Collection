@@ -1,0 +1,3 @@
+grant codeBase "file:/home/tudisie/Documents/POS/L02/L01X/out/artifacts/rmi_hello_client_jar/rmi_hello_client.jar"{
+    permission java.security.AllPermission;
+};

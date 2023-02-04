@@ -1,0 +1,38 @@
+-- `music-collection-db`.releases definition
+
+CREATE TABLE `releases` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL,
+  `genre` enum('rock','metal','blues','classical','rap','pop','jazz','thrash','hard rock','heavy metal','thrash metal','metalcore','progressive metal','alternative metal','grunge','unknown') NOT NULL,
+  `release_year` int(10) DEFAULT NULL,
+  `category` enum('album','single','song') NOT NULL,
+  `album_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `releases_UN` (`name`,`category`)
+) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4;
+
+
+
+-- `music-collection-db`.artists definition
+
+CREATE TABLE `artists` (
+  `id` varchar(32) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `active` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `artists_name_UN` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+
+-- `music-collection-db`.release_artists definition
+
+CREATE TABLE `release_artists` (
+  `release_id` int(10) NOT NULL,
+  `artist_id` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+  PRIMARY KEY (`release_id`),
+  KEY `release_artists_FK` (`artist_id`),
+  CONSTRAINT `release_artists_FK` FOREIGN KEY (`artist_id`) REFERENCES `artists` (`id`),
+  CONSTRAINT `release_id_FK` FOREIGN KEY (`release_id`) REFERENCES `releases` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unic

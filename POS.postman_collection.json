@@ -1,0 +1,944 @@
+{
+	"info": {
+		"_postman_id": "41230275-5579-4596-b25f-2e809c2cf148",
+		"name": "POS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "L05",
+			"item": [
+				{
+					"name": "other",
+					"item": [
+						{
+							"name": "get all releases w/ artists",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/release-artists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"release-artists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get artist songs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/artists/e6563652d6484f729aa39b73c987ad00/releases",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"artists",
+										"e6563652d6484f729aa39b73c987ad00",
+										"releases"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add new artist song",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"releaseId\": 68,\n    \"artistId\": \"696b39b42728451e82e5da4446d49e1d\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/artists/releases",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"artists",
+										"releases"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete artist song",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/artists/releases",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"artists",
+										"releases"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get release artists",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "artists",
+					"item": [
+						{
+							"name": "get all artists",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/artists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"artists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get page of artists",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "search for artists by name",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "get artist",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "add artist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Metallica\",\n    \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/artists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"artists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete artist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/artists/e5128f2540a64a12be6c8d5301a50b2c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"artists",
+										"e5128f2540a64a12be6c8d5301a50b2c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update artist",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Guns N' Roses\",\n    \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/artists/9e261e3b69ad11edad9f0800276b28aa",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"artists",
+										"9e261e3b69ad11edad9f0800276b28aa"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "releases",
+					"item": [
+						{
+							"name": "get all releases",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/releases",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"releases"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get release by name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/releases/name=chine",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"releases",
+										"name=chine"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search for releases by name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/releases?name=sky+is+over&match=exact",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"releases"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sky+is+over"
+										},
+										{
+											"key": "match",
+											"value": "exact"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search by year",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "get release",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "get album id by name",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Add release",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Chinese Democracy\",\n    \"genre\": \"heavy metal\",\n    \"releaseYear\": 2004,\n    \"category\": \"song\",\n    \"albumId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/releases",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"releases"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete release",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/releases/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"releases",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update release",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Chinese Democracy1s\",\n    \"genre\": \"hard rock\",\n    \"releaseYear\": null,\n    \"category\": \"song\",\n    \"albumId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/songcollection/releases/50",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"songcollection",
+										"releases",
+										"50"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get number of pages",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OpenAPI",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"docs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "L06",
+			"item": [
+				{
+					"name": "example",
+					"item": [
+						{
+							"name": "get user by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/steam/users/63a2f882d023a73a551181c6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"steam",
+										"users",
+										"63a2f882d023a73a551181c6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get user by username",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "get users",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "create user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"tudisie\",\n    \"achievements\": [\n        \"New Here\",\n        \"Hacker\"\n    ],\n    \"games\": [\n        {\n            \"title\": \"God of War III\",\n            \"playtime\": 0\n        },\n        {\n            \"title\": \"Resident Evil VII\",\n            \"playtime\": 30\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/steam/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"steam",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete user",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/steam/users/63a2ee52893fed00067cfc10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"steam",
+										"users",
+										"63a2ee52893fed00067cfc10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "partially update (fields) of user",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"join_year\": 2022\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/steam/users/63a2f882d023a73a551181c6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"steam",
+										"users",
+										"63a2f882d023a73a551181c6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/steam/users/63a2f882d023a73a551181c6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"steam",
+										"users",
+										"63a2f882d023a73a551181c6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "project",
+					"item": [
+						{
+							"name": "get playlists",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get user playlists",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "get playlist by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists/63b2cafe57f8530ff5ada3e5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists",
+										"63b2cafe57f8530ff5ada3e5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get playlists by title",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists/name:Don't+Cry",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists",
+										"name:Don't+Cry"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create playlist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"First Playlist\",\n    \"releases\": [\n        {\n            \"name\": \"Don't Cry\"\n        },\n        {\n            \"name\": \"Chinese Democracy\"\n        },\n        {\n            \"name\": \"Better\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create empty playlist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Empty PL\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete playlist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "partially update (fields) of user Copy",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"releases\": [\n        {\n            \"name\": \"Better\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists/63b2d975135895163da1c694",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists",
+										"63b2d975135895163da1c694"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update entire playlist (or create new)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Third PL\",\n    \"releases\": [\n        {\n            \"name\": \"Don't Cry\"\n        },\n        {\n            \"name\": \"Chinese Democracy\"\n        },\n        {\n            \"name\": \"Better\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists/9998cafe57f8530ff5ada3xx",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists",
+										"9998cafe57f8530ff5ada3xx"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add release to playlist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Buried Alive\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists/63b2d891db8d690a002483b9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists",
+										"63b2d891db8d690a002483b9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "remove release from playlist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/songcollection/playlists/63b2d891db8d690a002483b9/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"songcollection",
+										"playlists",
+										"63b2d891db8d690a002483b9",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CORS SOAP login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap11env:Envelope xmlns:soap11env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:service=\"services.db-auth.soap\"> \n    <soap11env:Body>\n        <service:login>\n                <service:username>Tudisie</service:username>\n                <service:password>Parola123</service:password>\n            </service:login>\n        </soap11env:Body>'\n    </soap11env:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		}
+	]
+}

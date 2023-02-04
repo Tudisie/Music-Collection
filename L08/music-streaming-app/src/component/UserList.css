@@ -1,0 +1,13 @@
+.vertical-space{
+    height: 50px;
+}
+
+.UserList th, tr, td{
+    border: 1px solid rgb(151, 151, 151);
+    padding: 20px 40px;
+
+}
+
+.UserList th{
+    max-width: 150px;
+}

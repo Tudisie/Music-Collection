@@ -1,0 +1,44 @@
+
+.search-container{
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.input-bar{
+    width: 85%;
+    height: 44px;
+}
+
+.search-btn{
+    width: 50px;
+    height: 45px;
+    padding-bottom: 7px;
+    background: #969696;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#match-exact-label{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+#match-exact-cb{
+    accent-color: red;
+}
+
+.container-cb{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.container-cb input{
+    margin-left: 20px;
+    transform: scale(1.5);
+    accent-color: red;
+}
+
+.disabled-text{
+    color: #555;
+}

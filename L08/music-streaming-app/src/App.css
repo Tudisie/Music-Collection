@@ -1,0 +1,26 @@
+.App {
+  background-color: #222;
+}
+
+.App-light {
+  background-color: rgb(127, 127, 127);
+  padding-top: 0px;
+  z-index: 5;
+}
+
+.main_container{
+  margin-left: 240px;
+  overflow: hidden;
+  color: white;
+}
+
+.main{
+  padding-left: 20px;
+}
+
+.main_container hr{
+  margin-top: 0;
+  background-color: #333;
+  margin-left: 10px;
+  margin-right: 10px;
+}

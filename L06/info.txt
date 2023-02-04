@@ -1,0 +1,68 @@
+Conectare la serverul de mongodb:
+Din MongoDB Compass:
+	- prima varianta:
+	mongodb://admin:passwdadmin@192.168.56.20:27017
+	
+	- a doua varianta:
+	Se completeaza separat campurile pentru host, port, autentificare
+
+Din masina virtuala:
+	mongo mongodb://admin:passwdadmin@192.168.56.20:27017
+	
+Comenzi utile:
+
+show databases
+
+use admin
+
+db.getUsers()
+
+
+Cum creez un admin cu drepturi depline:
+
+use admin
+db.createUser(
+  {
+    user: 'admin',
+    pwd: 'password',
+    roles: [ { role: 'root', db: 'admin' } ]
+  }
+);
+
+Daca exista admin si vrem sa ii adaugam toate drepturile:
+
+use admin;
+db.grantRolesToUser('admin', [{ role: 'root', db: 'admin' }])
+
+
+# din baza de date admin. nu va avea acces decat la baza de date pos_mongo_example (se observa usor in compass)
+db.createUser(
+{
+	user: "steam_owner",
+	pwd: "passwdowner",
+	roles: [
+	{
+		role: "dbOwner",
+		db: "pos_mongo_example"
+	}
+	]
+}
+)
+
+db.createUser(
+{
+	user: "steam_user",
+	pwd: "passwduser",
+	roles: [
+	{
+		role: "readWrite",
+		db: "pos_mongo_example"
+	}
+	]
+}
+)
+
+Pentru proiect:
+
+songcollection_owner : passwdowner
+songcollection_user : passwduser

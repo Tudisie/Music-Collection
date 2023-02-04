@@ -1,0 +1,18 @@
+.PlaylistList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap:1.5rem;
+    justify-content: left;
+    align-content: center;
+    margin-right: 30px;
+}
+
+.playlist-create-input{
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 180px;
+    margin-bottom: 30px;
+}
